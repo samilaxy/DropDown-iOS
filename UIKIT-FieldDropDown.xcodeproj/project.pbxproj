@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		830F88542CB973D400122C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F88532CB973D400122C8A /* AppDelegate.swift */; };
+		830F88562CB973D400122C8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F88552CB973D400122C8A /* SceneDelegate.swift */; };
+		830F88582CB973D400122C8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F88572CB973D400122C8A /* ViewController.swift */; };
+		830F885B2CB973D400122C8A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 830F885A2CB973D400122C8A /* Base */; };
+		830F885D2CB973D600122C8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830F885C2CB973D600122C8A /* Assets.xcassets */; };
+		830F88602CB973D600122C8A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 830F885F2CB973D600122C8A /* Base */; };
+		830F886B2CB973D700122C8A /* UIKIT_FieldDropDownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F886A2CB973D700122C8A /* UIKIT_FieldDropDownTests.swift */; };
+		830F88752CB973D700122C8A /* UIKIT_FieldDropDownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F88742CB973D700122C8A /* UIKIT_FieldDropDownUITests.swift */; };
+		830F88772CB973D700122C8A /* UIKIT_FieldDropDownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F88762CB973D700122C8A /* UIKIT_FieldDropDownUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		830F88672CB973D700122C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 830F88482CB973D400122C8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830F884F2CB973D400122C8A;
+			remoteInfo = "UIKIT-FieldDropDown";
+		};
+		830F88712CB973D700122C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 830F88482CB973D400122C8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830F884F2CB973D400122C8A;
+			remoteInfo = "UIKIT-FieldDropDown";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		830F88502CB973D400122C8A /* UIKIT-FieldDropDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKIT-FieldDropDown.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		830F88532CB973D400122C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		830F88552CB973D400122C8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		830F88572CB973D400122C8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		830F885A2CB973D400122C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		830F885C2CB973D600122C8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830F885F2CB973D600122C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		830F88612CB973D600122C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830F88662CB973D700122C8A /* UIKIT-FieldDropDownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKIT-FieldDropDownTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		830F886A2CB973D700122C8A /* UIKIT_FieldDropDownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKIT_FieldDropDownTests.swift; sourceTree = "<group>"; };
+		830F88702CB973D700122C8A /* UIKIT-FieldDropDownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKIT-FieldDropDownUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		830F88742CB973D700122C8A /* UIKIT_FieldDropDownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKIT_FieldDropDownUITests.swift; sourceTree = "<group>"; };
+		830F88762CB973D700122C8A /* UIKIT_FieldDropDownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKIT_FieldDropDownUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		830F884D2CB973D400122C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830F88632CB973D700122C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830F886D2CB973D700122C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		830F88472CB973D400122C8A = {
+			isa = PBXGroup;
+			children = (
+				830F88522CB973D400122C8A /* UIKIT-FieldDropDown */,
+				830F88692CB973D700122C8A /* UIKIT-FieldDropDownTests */,
+				830F88732CB973D700122C8A /* UIKIT-FieldDropDownUITests */,
+				830F88512CB973D400122C8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		830F88512CB973D400122C8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				830F88502CB973D400122C8A /* UIKIT-FieldDropDown.app */,
+				830F88662CB973D700122C8A /* UIKIT-FieldDropDownTests.xctest */,
+				830F88702CB973D700122C8A /* UIKIT-FieldDropDownUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		830F88522CB973D400122C8A /* UIKIT-FieldDropDown */ = {
+			isa = PBXGroup;
+			children = (
+				830F88532CB973D400122C8A /* AppDelegate.swift */,
+				830F88552CB973D400122C8A /* SceneDelegate.swift */,
+				830F88572CB973D400122C8A /* ViewController.swift */,
+				830F88592CB973D400122C8A /* Main.storyboard */,
+				830F885C2CB973D600122C8A /* Assets.xcassets */,
+				830F885E2CB973D600122C8A /* LaunchScreen.storyboard */,
+				830F88612CB973D600122C8A /* Info.plist */,
+			);
+			path = "UIKIT-FieldDropDown";
+			sourceTree = "<group>";
+		};
+		830F88692CB973D700122C8A /* UIKIT-FieldDropDownTests */ = {
+			isa = PBXGroup;
+			children = (
+				830F886A2CB973D700122C8A /* UIKIT_FieldDropDownTests.swift */,
+			);
+			path = "UIKIT-FieldDropDownTests";
+			sourceTree = "<group>";
+		};
+		830F88732CB973D700122C8A /* UIKIT-FieldDropDownUITests */ = {
+			isa = PBXGroup;
+			children = (
+				830F88742CB973D700122C8A /* UIKIT_FieldDropDownUITests.swift */,
+				830F88762CB973D700122C8A /* UIKIT_FieldDropDownUITestsLaunchTests.swift */,
+			);
+			path = "UIKIT-FieldDropDownUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		830F884F2CB973D400122C8A /* UIKIT-FieldDropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830F887A2CB973D700122C8A /* Build configuration list for PBXNativeTarget "UIKIT-FieldDropDown" */;
+			buildPhases = (
+				830F884C2CB973D400122C8A /* Sources */,
+				830F884D2CB973D400122C8A /* Frameworks */,
+				830F884E2CB973D400122C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIKIT-FieldDropDown";
+			productName = "UIKIT-FieldDropDown";
+			productReference = 830F88502CB973D400122C8A /* UIKIT-FieldDropDown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		830F88652CB973D700122C8A /* UIKIT-FieldDropDownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830F887D2CB973D700122C8A /* Build configuration list for PBXNativeTarget "UIKIT-FieldDropDownTests" */;
+			buildPhases = (
+				830F88622CB973D700122C8A /* Sources */,
+				830F88632CB973D700122C8A /* Frameworks */,
+				830F88642CB973D700122C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830F88682CB973D700122C8A /* PBXTargetDependency */,
+			);
+			name = "UIKIT-FieldDropDownTests";
+			productName = "UIKIT-FieldDropDownTests";
+			productReference = 830F88662CB973D700122C8A /* UIKIT-FieldDropDownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		830F886F2CB973D700122C8A /* UIKIT-FieldDropDownUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830F88802CB973D700122C8A /* Build configuration list for PBXNativeTarget "UIKIT-FieldDropDownUITests" */;
+			buildPhases = (
+				830F886C2CB973D700122C8A /* Sources */,
+				830F886D2CB973D700122C8A /* Frameworks */,
+				830F886E2CB973D700122C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830F88722CB973D700122C8A /* PBXTargetDependency */,
+			);
+			name = "UIKIT-FieldDropDownUITests";
+			productName = "UIKIT-FieldDropDownUITests";
+			productReference = 830F88702CB973D700122C8A /* UIKIT-FieldDropDownUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		830F88482CB973D400122C8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					830F884F2CB973D400122C8A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					830F88652CB973D700122C8A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 830F884F2CB973D400122C8A;
+					};
+					830F886F2CB973D700122C8A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 830F884F2CB973D400122C8A;
+					};
+				};
+			};
+			buildConfigurationList = 830F884B2CB973D400122C8A /* Build configuration list for PBXProject "UIKIT-FieldDropDown" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 830F88472CB973D400122C8A;
+			productRefGroup = 830F88512CB973D400122C8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				830F884F2CB973D400122C8A /* UIKIT-FieldDropDown */,
+				830F88652CB973D700122C8A /* UIKIT-FieldDropDownTests */,
+				830F886F2CB973D700122C8A /* UIKIT-FieldDropDownUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		830F884E2CB973D400122C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830F885D2CB973D600122C8A /* Assets.xcassets in Resources */,
+				830F88602CB973D600122C8A /* Base in Resources */,
+				830F885B2CB973D400122C8A /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830F88642CB973D700122C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830F886E2CB973D700122C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		830F884C2CB973D400122C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830F88582CB973D400122C8A /* ViewController.swift in Sources */,
+				830F88542CB973D400122C8A /* AppDelegate.swift in Sources */,
+				830F88562CB973D400122C8A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830F88622CB973D700122C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830F886B2CB973D700122C8A /* UIKIT_FieldDropDownTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830F886C2CB973D700122C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830F88752CB973D700122C8A /* UIKIT_FieldDropDownUITests.swift in Sources */,
+				830F88772CB973D700122C8A /* UIKIT_FieldDropDownUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		830F88682CB973D700122C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830F884F2CB973D400122C8A /* UIKIT-FieldDropDown */;
+			targetProxy = 830F88672CB973D700122C8A /* PBXContainerItemProxy */;
+		};
+		830F88722CB973D700122C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830F884F2CB973D400122C8A /* UIKIT-FieldDropDown */;
+			targetProxy = 830F88712CB973D700122C8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		830F88592CB973D400122C8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830F885A2CB973D400122C8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		830F885E2CB973D600122C8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830F885F2CB973D600122C8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		830F88782CB973D700122C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		830F88792CB973D700122C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		830F887B2CB973D700122C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7RA9BX62G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UIKIT-FieldDropDown/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fieldDropdown.UIKIT-FieldDropDown";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		830F887C2CB973D700122C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7RA9BX62G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UIKIT-FieldDropDown/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fieldDropdown.UIKIT-FieldDropDown";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		830F887E2CB973D700122C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7RA9BX62G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fieldDropdown.UIKIT-FieldDropDownTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKIT-FieldDropDown.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UIKIT-FieldDropDown";
+			};
+			name = Debug;
+		};
+		830F887F2CB973D700122C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7RA9BX62G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fieldDropdown.UIKIT-FieldDropDownTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKIT-FieldDropDown.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UIKIT-FieldDropDown";
+			};
+			name = Release;
+		};
+		830F88812CB973D700122C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7RA9BX62G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fieldDropdown.UIKIT-FieldDropDownUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UIKIT-FieldDropDown";
+			};
+			name = Debug;
+		};
+		830F88822CB973D700122C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P7RA9BX62G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fieldDropdown.UIKIT-FieldDropDownUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UIKIT-FieldDropDown";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		830F884B2CB973D400122C8A /* Build configuration list for PBXProject "UIKIT-FieldDropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830F88782CB973D700122C8A /* Debug */,
+				830F88792CB973D700122C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830F887A2CB973D700122C8A /* Build configuration list for PBXNativeTarget "UIKIT-FieldDropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830F887B2CB973D700122C8A /* Debug */,
+				830F887C2CB973D700122C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830F887D2CB973D700122C8A /* Build configuration list for PBXNativeTarget "UIKIT-FieldDropDownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830F887E2CB973D700122C8A /* Debug */,
+				830F887F2CB973D700122C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830F88802CB973D700122C8A /* Build configuration list for PBXNativeTarget "UIKIT-FieldDropDownUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830F88812CB973D700122C8A /* Debug */,
+				830F88822CB973D700122C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 830F88482CB973D400122C8A /* Project object */;
+}
