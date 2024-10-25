@@ -39,6 +39,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
             transparentView.frame = self.view.frame
         }
     }
+    @objc func removeTransparentView() {
+        let frames = selectedView.frame
+        UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
+            self.transparentView.alpha = 0
+            self.dropDownTableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height, width: frames.width, height: 0)
+        }, completion: nil)
+    }
 }
 
 
@@ -60,14 +67,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         removeTransparentView()
-        if selectedView == jobCodeDropDownView {
-            selectedJobCode = dataSource[indexPath.row]
-        }
+     
+            tf.text = dataSource[indexPath.row]
+
     }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         removeTransparentView()
-        if selectedView == jobCodeDropDownView {
-            selectedJobCode = dataSource[indexPath.row]
-        }
+        tf.text = dataSource[indexPath.row]
     }
 }
