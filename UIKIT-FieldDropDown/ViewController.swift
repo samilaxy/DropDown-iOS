@@ -18,9 +18,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-      //  tf?.delegate = self
+        tf?.delegate = self
+        dropDownTableView.register(Cell.self, forCellReuseIdentifier: "Cell")
+        dropDownTableView.delegate = self
+        dropDownTableView.dataSource = self
         self.view.addSubview(transparentView)
-        tf.addTarget(self, action: #selector(textFieldTapped), for: .editingDidBegin)
+        tf.addTarget(self, action: #selector(textFieldTapped), for: .allEditingEvents)
 
     }
  
@@ -92,4 +95,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         removeTransparentView()
         tf.text = dataSource[indexPath.row]
     }
+}
+
+class Cell: UITableViewCell {
+    
 }
