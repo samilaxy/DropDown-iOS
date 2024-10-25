@@ -18,20 +18,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        tf?.delegate = self
+      //  tf?.delegate = self
         self.view.addSubview(transparentView)
-        dataSource = ["Fitz","Samuel","Maxwell"]
+        tf.addTarget(self, action: #selector(textFieldTapped), for: .editingDidBegin)
+
     }
  
-    @IBAction func tftab(_ sender: Any) {
+ 
+    @objc func textFieldTapped() {
         print("TextField was tapped!")
+        dataSource = ["Fitz","Samuel","Maxwell"]
         addTransparentView(frames: tf.frame)
     }
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-            // Perform your action here
-        print("TextField was tapped!")
-    }
-    
+
     func addTransparentView(frames: CGRect) {
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let window = windowScene.windows.first {
@@ -55,7 +54,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.transparentView.alpha = 0.5
             self.dropDownTableView.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height + 5, width: frames.width, height: CGFloat(self.dataSource.count * 50))
         }, completion: nil)
-    }    
+    } 
+    
     @objc func removeTransparentView() {
         let frames = selectedView.frame
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
