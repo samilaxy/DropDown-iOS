@@ -10,10 +10,12 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var tf: UITextField!
-    var dataSource: [String] = []
+    @IBOutlet weak var secondTf: UITextField!
+    var dataSource:[Any] = []
     let transparentView = UIView()
     let dropDownTableView = UITableView()
     var selectedView = UIView()
+    var dropDownType: DropDownType = .tf
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +26,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         dropDownTableView.dataSource = self
         self.view.addSubview(transparentView)
         tf.addTarget(self, action: #selector(textFieldTapped), for: .allEditingEvents)
+        secondTf.addTarget(self, action: #selector(secondTextFieldTapped), for: .allEditingEvents)
 
     }
  
  
     @objc func textFieldTapped() {
-        print("TextField was tapped!")
+        dropDownType = .tf
         dataSource = ["Fitz","Samuel","Maxwell"]
         addTransparentView(frames: tf.frame)
+    }
+    @objc func secondTextFieldTapped() {
+        dropDownType = .secondTf
+        dataSource = [4,2,8,10]
+        addTransparentView(frames: secondTf.frame)
     }
 
     func addTransparentView(frames: CGRect) {
@@ -70,7 +78,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
 
 
-    /////table view
+    // table view
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
@@ -78,7 +86,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = dataSource[indexPath.row]
+        cell.textLabel?.text = "\(dataSource[indexPath.row])"
         return cell
     }
     
@@ -88,15 +96,27 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         removeTransparentView()
      
-            tf.text = dataSource[indexPath.row]
+        switch dropDownType {
+                
+            case .tf:
+                tf.text = "\(dataSource[indexPath.row])"
+            case .secondTf:
+                secondTf.text = "\(dataSource[indexPath.row])"
+        }
+            
 
     }
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        removeTransparentView()
-        tf.text = dataSource[indexPath.row]
-    }
+//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+//        removeTransparentView()
+//        tf.text = dataSource[indexPath.row]
+//    }
 }
 
 class Cell: UITableViewCell {
     
+}
+
+enum DropDownType {
+    case tf
+    case secondTf
 }
