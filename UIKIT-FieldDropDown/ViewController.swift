@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         dropDownTableView.dataSource = self
         self.view.addSubview(transparentView)
         tf.addTarget(self, action: #selector(textFieldTapped), for: .allEditingEvents)
-        secondTf.addTarget(self, action: #selector(secondTextFieldTapped), for: .)
+        secondTf.addTarget(self, action: #selector(secondTextFieldTapped), for: .allEditingEvents)
 
     }
  
