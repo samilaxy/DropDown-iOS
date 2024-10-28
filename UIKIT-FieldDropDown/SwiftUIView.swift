@@ -21,7 +21,7 @@ struct SwiftUIView: View {
                 VStack(spacing: 20) {
                     CustomTextField(placeholder: "Enter name", text: $textFieldValue, onEditingChanged: {
                         dropDownType = .tf
-                        dataSource = ["Fitz", "Samuel", "Maxwell"]
+                        dataSource = ["Fitz3", "Samuel", "Maxwell"]
                         showDropDown.toggle()
                     })
                     .overlay(GeometryReader { geometry in
