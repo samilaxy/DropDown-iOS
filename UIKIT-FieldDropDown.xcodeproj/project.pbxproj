@@ -16,6 +16,8 @@
 		830F886B2CB973D700122C8A /* UIKIT_FieldDropDownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F886A2CB973D700122C8A /* UIKIT_FieldDropDownTests.swift */; };
 		830F88752CB973D700122C8A /* UIKIT_FieldDropDownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F88742CB973D700122C8A /* UIKIT_FieldDropDownUITests.swift */; };
 		830F88772CB973D700122C8A /* UIKIT_FieldDropDownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F88762CB973D700122C8A /* UIKIT_FieldDropDownUITestsLaunchTests.swift */; };
+		8321B8282CCFD25F003C6681 /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321B8262CCFD25F003C6681 /* UIKitViewController.swift */; };
+		8321B8292CCFD25F003C6681 /* UIKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8321B8272CCFD25F003C6681 /* UIKitViewController.xib */; };
 		83D5579C2CCBF57800029729 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5579B2CCBF57800029729 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		830F88702CB973D700122C8A /* UIKIT-FieldDropDownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKIT-FieldDropDownUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		830F88742CB973D700122C8A /* UIKIT_FieldDropDownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKIT_FieldDropDownUITests.swift; sourceTree = "<group>"; };
 		830F88762CB973D700122C8A /* UIKIT_FieldDropDownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKIT_FieldDropDownUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8321B8262CCFD25F003C6681 /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
+		8321B8272CCFD25F003C6681 /* UIKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIKitViewController.xib; sourceTree = "<group>"; };
 		83D5579B2CCBF57800029729 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +113,8 @@
 				830F885E2CB973D600122C8A /* LaunchScreen.storyboard */,
 				830F88612CB973D600122C8A /* Info.plist */,
 				83D5579B2CCBF57800029729 /* SwiftUIView.swift */,
+				8321B8262CCFD25F003C6681 /* UIKitViewController.swift */,
+				8321B8272CCFD25F003C6681 /* UIKitViewController.xib */,
 			);
 			path = "UIKIT-FieldDropDown";
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				830F885D2CB973D600122C8A /* Assets.xcassets in Resources */,
+				8321B8292CCFD25F003C6681 /* UIKitViewController.xib in Resources */,
 				830F88602CB973D600122C8A /* Base in Resources */,
 				830F885B2CB973D400122C8A /* Base in Resources */,
 			);
@@ -263,6 +270,7 @@
 			files = (
 				830F88582CB973D400122C8A /* ViewController.swift in Sources */,
 				830F88542CB973D400122C8A /* AppDelegate.swift in Sources */,
+				8321B8282CCFD25F003C6681 /* UIKitViewController.swift in Sources */,
 				83D5579C2CCBF57800029729 /* SwiftUIView.swift in Sources */,
 				830F88562CB973D400122C8A /* SceneDelegate.swift in Sources */,
 			);

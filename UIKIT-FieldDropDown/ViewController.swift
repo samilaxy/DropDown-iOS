@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
@@ -27,10 +28,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.view.addSubview(transparentView)
         tf.addTarget(self, action: #selector(textFieldTapped), for: .allEditingEvents)
         secondTf.addTarget(self, action: #selector(secondTextFieldTapped), for: .allEditingEvents)
+            // Add a button or some trigger to navigate to SwiftUI view
+        let button = UIButton(type: .system)
+        button.setTitle("Go to SwiftUI View", for: .normal)
+        button.addTarget(self, action: #selector(navigateToSwiftUIView), for: .touchUpInside)
+        button.center = view.center
+        view.addSubview(button)
+        
+        
 
     }
  
- 
+    @objc func navigateToSwiftUIView() {
+            // Initialize the SwiftUI view
+        let swiftUIView = SwiftUIView()
+        let hostingController = UIHostingController(rootView: swiftUIView)
+        
+            // Push the hosting controller onto the navigation stack
+        navigationController?.pushViewController(hostingController, animated: true)
+    }
+    
     @objc func textFieldTapped() {
         dropDownType = .tf
         dataSource = ["Fitz","Samuel","Maxwell"]
